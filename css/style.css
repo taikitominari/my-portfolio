@@ -1,0 +1,77 @@
+html {
+    font-size: 62.5%;
+}
+* {
+    box-sizing: border-box;
+    font-family: 'Hiragino Kaku Gothic Pro','ヒラギノ角ゴ Pro W3','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+}
+.section-title {
+    font-size: 50px;
+    letter-spacing: 8px;
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+/* header */
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 100vh;
+}
+.container {
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.header-title-wrap {
+    width: 100%;
+    height: auto;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+.title-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 80%;
+    height: 100px;
+}
+.header-title {
+    padding-bottom: 20px;
+    font-size: 80px;
+    font-weight: lighter;
+    letter-spacing: 5px;
+}
+.name {
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.menu-icon {
+    position: absolute;
+    top: 30px;
+    right: 45px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* section self-introduction */
+.self-introduction {
+    padding: 100px 0;
+}
+.s-ntroduction-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+.image-item-wrap {
+    flex: 3;
+}
+.image-item-wrap img {
+    border-radius: 50%;
+}
+.text-item-wrap {
+    padding-left: 50px;
+    flex: 7;
+    text-align: left;
+}
