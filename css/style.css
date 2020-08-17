@@ -8,8 +8,7 @@ html {
 .section-title {
     font-size: 50px;
     letter-spacing: 8px;
-    padding-top: 30px;
-    padding-bottom: 60px;
+    padding-top: 100px;
 }
 /* header */
 header {
@@ -58,9 +57,10 @@ header {
 
 /* section self-introduction */
 .self-introduction {
-    padding: 100px 0;
+    /* padding: 100px 0; */
 }
 .s-ntroduction-wrap {
+    padding-top: 100px;
     display: flex;
     justify-content: space-between;
 }
@@ -75,3 +75,42 @@ header {
     flex: 7;
     text-align: left;
 }
+.text-item-wrap ul li {
+    font-size: 16px;
+    line-height: 40px;
+}
+
+/* performance */
+.performance {
+    margin: 0 auto;
+    text-align: center;
+}
+.introduction {
+    padding-top: 50px;
+}
+.bono-img-wrap {
+    width: 100%;
+    height: 320px;
+}
+.bono-img-wrap img {
+    width: 400px;
+    cursor: pointer;
+    vertical-align: bottom;
+}
+.bono-img-wrap img:hover {
+    width: 380px;
+    transition: 0.4s;
+}
+
+/* .introduction-text {
+
+} */
+.color {
+    background-color: red;
+    z-index: 10;
+    width
+}
+.bono-img {
+    width: 100%;
+}
+
