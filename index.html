@@ -1,77 +1,75 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-</head> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>タイキPortfolio</title>
+</head>
 <body>
-    <header>
-        <nav>
-            <ul class="header_list">
-                <li>人物紹介</li>
-                <li>実績紹介</li>
-                <li>プログラミングとの出会い</li>
-            </ul>
-        </nav>
+  <header>
+    <nav>
+      <ul class="header_list">
+        <li><a href="#introduction">自分紹介</a></li>
+        <li><a href="#performance">実績一覧</a></li>
+        <li><a href="#pg_myself">プログラミングと私</a></li>
+      </ul>
+    </nav>
+  </header>
 
-        <div class="title_wrapper">
-            <div class="title_container">
-                <h1 class="header_title">Potfolio</h1>
-                <p class="name">Taiki Tominari</p>
-            </div>
-        </div>
-    </header>
-    
-    <!-- 自己紹介 -->
-    <section class="self-introduction">
-        <div class="container">
-            <div class="section-title">自己紹介</div>
-            <div class="s-introduction-wrap">
-                <div class="image-item-wrap">
-                    <!-- <img src="img/IMG_8540.jpeg" width="200" height="200"> -->
-                </div>
-                <div class="text-item-wrap">
-                    <ul>
-                        <li>名前 : 富成 泰暉(とみなり たいき)</li>
-                        <li>出身地 : 岐阜県</li>
-                        <li>経歴 : 高校を卒業後,航空機部品を取り扱う会社に就職、そこで検査員として４年間務める。働きながらプログラミングを独学で勉強、個人で何か案件を受けれないかと、探していると地元の美容師のかたに是非お願い！と言われホームページの作成を始め、それを実績に転職活動を開始する。</li>
-                        <li>趣味 : ファッション , スポーツ(主にバスケットボール) , </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+  <main>
+    <section class="top ">
+      <h1 class="main-title">Portfolio</h1>
     </section>
-    <!-- 実績 -->
-    <section class="performance">
-            <div class="container">
-                <div class="section-title" >実績紹介</div>
-                
-                <div class="introduction">
-                    <div class="bono-imag">
-                        <a href="https://taikitominari.github.io/bono-hair/"><img class="img-btn" src="img/スクリーンショット 2020-08-12 13.01.28.png"></a>
-                    </div>
-                    <div class="introduction-text">
-                        <h2 class="text-title">作成物</h2>
-                        <p>美容院のHP(BONO hair)</p>
-                        <h2 class="text-title">使用言語</h2>
-                        <p>HTML, CSS, JavaScript, jQuery</p>
-                        <h2 class="text-title">制作期間</h2>
-                        <p>?ヶ月</p>
-                        <h2 class="text-title">詳細</h2>
-                        <p>サイトのデザインから作成、サーバーにアップするまでを
-                            美容院の方と実際に話し合い作り上げました。</p>
-                    </div>
-                </div>
-            </div>
+<!-- 自己紹介 -->
+    <section class="introduction" id="introduction">
+      <h2 class="title_name">自己紹介</h2>
+      <div class="id_content_wrap">
+        <div class="id_img">
+          <img src="img/scarlet-4728862_1280.jpg">
         </div>
+        <div class="id_text">
+          <dl>
+            <dt>名前</dt>
+            <dd>富成 泰暉(トミナリ タイキ)</dd>
+          </dl>
+          <dl>
+            <dt>経歴</dt>
+            <dd>高校を卒業後,航空機部品を取り扱う会社に就職、そこで検査員として４年間務める。働きながらプログラミングを独学で勉強、個人で何か案件を受けれないかと、探していると地元の美容師のかたに是非お願い！と言われホームページの作成を始め、それを実績に転職活動を開始する。</dd>
+          </dl>
+          <dl>
+            <dt>趣味</dt>
+            <dd>ファッション , スポーツ(主にバスケットボール)</dd>
+          </dl>
+        </div>
+      </div>
     </section>
-<script type="text/javascript" src="js/main.js"></script>
+
+    <section class="performance" id="performance">
+      <h2 class="title_name">実績紹介</h2>
+      <div class="pm_wrap">
+        <div class="pm_item">
+          <div class="pm_item_title">理容店ホームページ作成作成</div>
+          <img class="pm_img" src="img/スクリーンショット 2020-08-12 13.01.28.png">
+          <a class="pm_btn" href="bono-hair/bono.html">制作物詳細</a>
+          <a class="pm_btn" href="http://bonohair95.com">デモページ</a>
+          <a class="pm_btn" href="https://github.com/taikitominari/bono-hair">Git Hub</a>
+        </div>
+        <div class="pm_item">
+          <div class="pm_item_title">ToDOリスト</div>
+          <img class="pm_img" src="img/スクリーンショット 2020-12-27 19.10.08.png">
+          <a class="pm_btn" href="todo/todo.html">制作物詳細</a>
+          <a class="pm_btn" href="https:///taikitominari.github.io/todoapp">デモページ</a>
+          <a class="pm_btn" href="https:///taikitominari.github.io/bono-hair">デモページ</a>
+          <a class="pm_btn" href="https://github.com/taikitominari/todoapp">Git Hub</a>
+        </div>
+      </div>
+
+    </section>
+    <section class="pg_myself" id="pg_myself">
+      <h2 class="title_name">プログラミング×私</h2>
+    </section>
+  </main>
 </body>
 </html>
-
-
