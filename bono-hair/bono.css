@@ -1,0 +1,53 @@
+/* header */
+nav {
+  position: fixed;
+  background-color: rgba(0,0,0,0.8);
+  height: 60px;
+  z-index: 10;  
+  width: 100%;
+}
+.header_list {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+}
+.header_list li {
+  line-height: 60px;
+  margin-left: 80px;
+  font-size: 16px;
+}
+.header_list li a {
+  text-decoration: none;
+  color: #fff;
+}
+.header_list li a:hover {
+  color: #00bfff;
+  transition: 0.4s;
+}
+/* bono_top */
+.bono_top {
+  padding-top: 120px;
+  text-align: center;
+}
+.top_title {
+  font-size: 25px;
+}
+.bono_item {
+  width: 85%;
+  margin: 0 auto;
+}
+.bono_img-wrap {
+  padding-top: 50px;
+}
+.bono_details {
+  padding: 80px 100px;
+  text-align: left;
+}
+.bono_details li {
+  font-size: 22px;
+  padding-bottom: 20px;
+}
+.bono_img {
+  width: 100%;
+}

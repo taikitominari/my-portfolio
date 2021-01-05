@@ -9,7 +9,7 @@
 nav {
   position: fixed;
   background-color: rgba(0,0,0,0.8);
-  height: 40px;
+  height: 60px;
   z-index: 10;  
   width: 100%;
 }
@@ -20,20 +20,24 @@ nav {
   justify-content: flex-end;
 }
 .header_list li {
-  line-height: 40px;
+  line-height: 60px;
   margin-left: 80px;
-  font-size: 14px;
+  font-size: 16px;
 }
 .header_list li a {
   text-decoration: none;
   color: #fff;
+}
+.header_list li a:hover {
+  color: #00bfff;
+  transition: 0.4s;
 }
 
 /* top */
 .top {
   background-image: url(../img/camera-1215737_1280.jpg);
   background-size: cover;
-  height: 760px;
+  height: 780px;
   text-align: center;
   position: relative;
 }
@@ -85,8 +89,7 @@ nav {
 /* performance */
 .performance {
   padding: 100px 0 100px 0;
-  background-image: url("../img/black-1072366__480.jpg");
-  color: #fff;
+  background-color: rgba(242, 242, 242,0.8);
 }
 .pm_wrap {
   width: 85%;
@@ -106,15 +109,23 @@ nav {
 }
 .pm_img {
   width: 100%;
-  padding-bottom: 50px;
+  padding-bottom: 40px;
+}
+.todo_details {
+  text-align: center;
+  padding-bottom: 60px;
+}
+.todo_details li {
+  font-size: 20px;
+  padding-top: 20px;
 }
 .pm_btn {
   color: #fff;
   text-decoration: none;
   font-size: 15px;
   background-color: seagreen;
-  padding: 15px 30px;
-  margin-right: 20px;
+  padding: 20px 40px;
+  margin: 50px 20px 0 0;
   cursor: pointer;
   border-radius: 8px;
 }
