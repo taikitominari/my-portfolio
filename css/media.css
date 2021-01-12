@@ -1,0 +1,60 @@
+@media screen and (max-width: 1020px) {
+  .id_text dl dt {
+    font-size: 22px;
+  }
+  .id_text dl dd {
+    font-size: 17px;
+  }
+  .tool_wrap dt {
+    font-size: 22px;
+  }
+  .tool_wrap dd {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .id_content_wrap {
+    width: 80%;
+    display: block;
+  }
+  .id_img {
+    padding-right: 0;
+    padding-bottom: 40px;
+  }
+  .pg_item_wrap {
+    display: block;
+  }
+  .skill_img_wrap {
+    padding-right: 0;
+    padding-bottom: 40px;
+  }
+  .tool_wrap dt {
+    font-size: 25px;
+  }
+  .tool_wrap dd {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .fa-bars {
+    display: block;
+  }
+  .header_list {
+    display: none;
+  }
+  .pm_item_title {
+    font-size: 25px;
+  }
+  .pm_item:first-of-type {
+    padding-bottom: 80px;
+  }
+  .pm_btn {
+    padding: 15px 0px;
+    display: block;
+    font-size: 18px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+}
