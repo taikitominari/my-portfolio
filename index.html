@@ -3,18 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/media.css">
   <title>タイキPortfolio</title>
 </head>
 <body>
   <header>
     <nav>
+      <ul class="menu_list">
+        <i class="fas fa-times"></i>
+        <li><a href="#introduction">自分紹介</a></li>
+        <li><a href="#pg_myself">スキルセット</a></li>
+        <li><a href="#performance">作品一覧</a></li>
+      </ul>
+
+      <i class="fas fa-bars"></i>
       <ul class="header_list">
         <li><a href="#introduction">自分紹介</a></li>
         <li><a href="#pg_myself">スキルセット</a></li>
-        <li><a href="#performance">実績一覧</a></li>
+        <li><a href="#performance">作品一覧</a></li>
       </ul>
     </nav>
   </header>
@@ -71,22 +81,19 @@
     </section>
 
     <section class="performance" id="performance">
-      <h2 class="title_name">実績紹介</h2>
+      <h2 class="title_name">作品紹介</h2>
       <div class="pm_wrap">
         <div class="pm_item">
-          <div class="pm_item_title">理容店ホームページ作成作成</div>
-          <img class="pm_img" src="img/スクリーンショット 2020-08-12 13.01.28.png">
-          <a class="pm_btn" href="bono-hair/bono.html">制作物詳細</a>
+          <div class="pm_item_title">BONO hairホームページ</div>
+          <img class="pm_img" src="img/bono hair.png">
+          <a class="pm_btn" href="introduction/introduction.html#bono_introduction">作品詳細</a>
           <a class="pm_btn" href="http://bonohair95.com">デモページ</a>
           <a class="pm_btn" href="https://github.com/taikitominari/bono-hair">Git Hub</a>
         </div>
         <div class="pm_item">
-          <div class="pm_item_title">ToDOリスト</div>
-          <img class="pm_img" src="img/スクリーンショット 2020-12-27 19.10.08.png">
-          <ul class="todo_details">
-            <li>使用言語 : HTML / CSS / JavaScript</li>
-            <li>制作期間 : １ヶ月</li>
-          </ul>
+          <div class="pm_item_title">todoリスト</div>
+          <img class="pm_img" src="img/todoリスト.png">
+          <a class="pm_btn" href="introduction/introduction.html#todo_introduction">作品詳細</a>
           <a class="pm_btn" href="https:///taikitominari.github.io/todoapp">デモページ</a>
           <a class="pm_btn" href="https://github.com/taikitominari/todoapp">Git Hub</a>
         </div>
