@@ -3,16 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
   <link rel="stylesheet" href="../css/reset.css">
-  <link rel="stylesheet" href="introduction.css">
+  <link rel="stylesheet" href="css/introduction.css">
+  <link rel="stylesheet" href="css/i_media.css">
   <title>作品紹介(BONO hairホームページ)</title>
 </head>
 <body>
   <header>
     <nav>
+      <ul class="menu_list">
+        <i class="fas fa-times" id="haid_btn"></i>
+        <li><a class="menu_item" href="../index.html#introduction">自己紹介</a></li>
+        <li><a class="menu_item" href="../index.html#pg_myself">スキルセット</a></li>
+        <li><a class="menu_item" href="../index.html#introduction">作品紹介</a></li>
+        <li><a class="menu_item" href="#bono_introduction">BONO hair</a></li>
+        <li><a class="menu_item" href="#todo_introduction">todoリスト</a></li>
+      </ul>
+
+      <i class="fas fa-bars" id="open_btn"></i>
       <ul class="header_list">
+        <li><a href="../index.html#introduction">自己紹介</a></li>
+        <li><a href="../index.html#pg_myself">スキルセット</a></li>
         <li><a href="../index.html#performance">作品紹介</a></li>
-        <li><a href="../index.html">TOPページ</a></li>
+        <li><a href="#bono_introduction">BONO hair</a></li>
+        <li><a href="#todo_introduction">todoリスト</a></li>
       </ul>
     </nav>
   </header>
@@ -30,17 +45,17 @@
   
       <section class="question_list_wrap">
         <ul class="question_list">
-          <li class="question"><a href="#language">どんな言語を使用したの？</a></li>
-          <li class="question"><a href="#period">制作期間はどれくらいかかったの？</a></li>
-          <li class="question"><a href="#episode">制作にあたって意識したこと(制作時のエピソードなど)</a></li>
-          <li class="question"><a href="#technology">作品に使用した技術について</a></li>
+          <li class="question"><a href="#bono_language">どんな言語を使用したの？</a></li>
+          <li class="question"><a href="#bono_period">制作期間はどれくらいかかったの？</a></li>
+          <li class="question"><a href="#bono_episode">制作にあたって意識したこと(制作時のエピソードなど)</a></li>
+          <li class="question"><a href="#bono_technology">作品に使用した技術について</a></li>
         </ul>
       </section>
   
       <section class="q_and_a_wrap">
         <div class="q_and_a_title">作品についてのQ&A</div>
   
-        <div class="q_and_a" id="language">
+        <div class="q_and_a" id="bono_language">
           <div class="q_wrap">
             <p class="q_text"><span class="q_logo">Q:</span>どんな言語を使用したの？</p>
             <img src="img/user.png" class="user_img" alt="質問者">
@@ -51,18 +66,18 @@
           </div>
         </div>
   
-        <div class="q_and_a" id="period">
+        <div class="q_and_a" id="bono_period">
           <div class="q_wrap">
             <p class="q_text"><span class="q_logo">Q:</span>制作期間はどれくらいかかったの？</p>
             <img src="img/user.png" class="user_img" alt="質問者">
           </div>
           <div class="a_wrap">
             <img src="img/my_icon.webp" class="user_img" alt="質問者">
-            <p class="a_text"><span class="a_logo">A:</span>HTML , CSS ,JavaScript(jQuery)を使って作成しました</p>
+            <p class="a_text"><span class="a_logo">A:</span>6ヶ月</p>
           </div>
         </div>
   
-        <div class="q_and_a" id="episode">
+        <div class="q_and_a" id="bono_episode">
           <div class="q_wrap">
             <p class="q_text"><span class="q_logo">Q:</span>制作にあたって意識したこと(制作時のエピソードなど)</p>
             <img src="img/user.png" class="user_img" alt="質問者">
@@ -73,7 +88,7 @@
           </div>
         </div>
   
-        <div class="q_and_a" id="technology">
+        <div class="q_and_a" id="bono_technology">
           <div class="q_wrap">
             <p class="q_text"><span class="q_logo">Q:</span>作品に使用した技術について</p>
             <img src="img/user.png" class="user_img" alt="質問者">
@@ -99,17 +114,17 @@
   
       <section class="question_list_wrap">
         <ul class="question_list">
-          <li class="question"><a href="#language">どんな言語を使用したの？</a></li>
-          <li class="question"><a href="#period">制作期間はどれくらいかかったの？</a></li>
-          <li class="question"><a href="#episode">制作にあたって意識したこと(制作時のエピソードなど)</a></li>
-          <li class="question"><a href="#technology">作品に使用した技術について</a></li>
+          <li class="question"><a href="#todo_language">どんな言語を使用したの？</a></li>
+          <li class="question"><a href="#todo_period">制作期間はどれくらいかかったの？</a></li>
+          <li class="question"><a href="#todo_episode">制作にあたって意識したこと(制作時のエピソードなど)</a></li>
+          <li class="question"><a href="#todo_technology">作品に使用した技術について</a></li>
         </ul>
       </section>
   
       <section class="q_and_a_wrap">
         <div class="q_and_a_title">作品についてのQ&A</div>
   
-        <div class="q_and_a" id="language">
+        <div class="q_and_a" id="todo_language">
           <div class="q_wrap">
             <p class="q_text"><span class="q_logo">Q:</span>どんな言語を使用したの？</p>
             <img src="img/user.png" class="user_img" alt="質問者">
@@ -120,18 +135,18 @@
           </div>
         </div>
   
-        <div class="q_and_a" id="period">
+        <div class="q_and_a" id="todo_period">
           <div class="q_wrap">
             <p class="q_text"><span class="q_logo">Q:</span>制作期間はどれくらいかかったの？</p>
             <img src="img/user.png" class="user_img" alt="質問者">
           </div>
           <div class="a_wrap">
             <img src="img/my_icon.webp" class="user_img" alt="質問者">
-            <p class="a_text"><span class="a_logo">A:</span>HTML , CSS ,JavaScript(jQuery)を使って作成しました</p>
+            <p class="a_text"><span class="a_logo">A:</span>１ヶ月</p>
           </div>
         </div>
   
-        <div class="q_and_a" id="episode">
+        <div class="q_and_a" id="todo_episode">
           <div class="q_wrap">
             <p class="q_text"><span class="q_logo">Q:</span>制作にあたって意識したこと(制作時のエピソードなど)</p>
             <img src="img/user.png" class="user_img" alt="質問者">
@@ -142,7 +157,7 @@
           </div>
         </div>
   
-        <div class="q_and_a" id="technology">
+        <div class="q_and_a" id="todo_technology">
           <div class="q_wrap">
             <p class="q_text"><span class="q_logo">Q:</span>作品に使用した技術について</p>
             <img src="img/user.png" class="user_img" alt="質問者">
@@ -154,7 +169,7 @@
         </div>
       </section>
     </div>
-
   </main>
+<script src="../js/main.js"></script>
 </body>
 </html>

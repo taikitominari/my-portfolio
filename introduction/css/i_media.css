@@ -1,0 +1,48 @@
+@media screen and (max-width: 1020px) {
+
+}
+@media screen and (max-width: 900px) {
+  .main-title {
+    font-size: 25px;
+  }
+  .fa-bars {
+    display: block;
+  }
+  .header_list {
+    display: none;
+    letter-spacing: 3px;
+  }
+  .question_list {
+    padding: 30px 80px;
+  }
+  .question a {
+    font-size: 15px;
+  }
+  .a_wrap {
+    display: block;
+  }
+  .a_text , .q_text {
+    font-size: 15px;
+  }
+  .a_text {
+    padding-left: 0;
+    padding-top: 10px;
+  }
+  .q_wrap {
+    padding-bottom: 20px;
+  }
+  .q_text {
+    padding-right: 10px;
+  }
+  .user_img {
+    padding-right: 0;
+  }
+}
+@media screen and (max-width: 620px) {
+  .main-title {
+    font-size: 20px;
+  }
+  .question_list {
+    padding: 30px 50px;
+  }
+} 
