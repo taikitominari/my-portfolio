@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
-  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/media.css">
@@ -14,13 +13,13 @@
   <header>
     <nav>
       <ul class="menu_list">
-        <i class="fas fa-times"></i>
-        <li><a href="#introduction">自分紹介</a></li>
-        <li><a href="#pg_myself">スキルセット</a></li>
-        <li><a href="#performance">作品一覧</a></li>
+        <i class="fas fa-times" id="haid_btn"></i>
+        <li><a class="menu_item" href="#introduction">自分紹介</a></li>
+        <li><a class="menu_item" href="#pg_myself">スキルセット</a></li>
+        <li><a class="menu_item" href="#performance">作品一覧</a></li>
       </ul>
 
-      <i class="fas fa-bars"></i>
+      <i class="fas fa-bars" id="open_btn"></i>
       <ul class="header_list">
         <li><a href="#introduction">自分紹介</a></li>
         <li><a href="#pg_myself">スキルセット</a></li>
@@ -73,7 +72,7 @@
             <dl>
               <dt>おまけ</dt>
               <dd><a href="bonus.html">プログラミング学習のざっくり歴史</a></dd>
-              <dd><a a href="bonus.html">プログラミングとの出会い</a></dd>
+              <dd><a a href="study.html">今、これからの勉強について</a></dd>
             </dl>
           </div>
         </div>
@@ -100,5 +99,6 @@
       </div>
     </section>
   </main>
+<script src="js/main.js"></script>
 </body>
 </html>
