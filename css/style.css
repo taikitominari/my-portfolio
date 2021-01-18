@@ -20,15 +20,16 @@ body {
   background-color: #66cdaa;
   padding: 10px 0;
   z-index: 15;
+  transition: 0.4s;
+}
+body.open_menu .menu_list {
+  top: 0px;
 }
 .menu_list li {
   padding: 10px 0;
   margin: 10px 0;
   font-size: 18px;
 }
-/* .menu_list li:first-of-type {
-  margin-top: 0px;
-} */
 .fa-times {
   position: absolute;
   top: 20px;
@@ -71,7 +72,7 @@ nav {
   margin-left: 80px;
   font-size: 16px;
 }
-.header_list li a,.menu_list li a {
+.header_list li a,.menu_item {
   text-decoration: none;
   color: #fff;
 }
