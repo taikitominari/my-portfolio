@@ -1,3 +1,9 @@
+.main_title {
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 2px;
+  padding: 50px 0 100px 0;
+}
 /* header menu_list */
 .menu_list {
   width: 100%;
@@ -69,18 +75,17 @@ nav {
   color: #66cdaa;
   transition: 0.4s;
 }
-
-/* history */
-.history {
-  padding: 100px 0;
+/* effort */
+.effort {
+  padding: 100px 0 50px 0;
   margin: 0 auto;
   width: 85%;
 }
-.history_title {
-  text-align: center;
-  font-size: 30px;
-  letter-spacing: 2px;
+/* history */
+.history {
   padding: 50px 0 100px 0;
+  margin: 0 auto;
+  width: 85%;
 }
 .history_item {
   padding-bottom: 50px;
