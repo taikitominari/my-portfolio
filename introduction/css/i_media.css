@@ -40,7 +40,8 @@
 }
 @media screen and (max-width: 620px) {
   .main-title {
-    font-size: 20px;
+    font-size: 18px;
+    letter-spacing: 2px;
   }
   .question_list {
     padding: 30px 50px;

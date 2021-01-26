@@ -72,7 +72,7 @@ nav {
 
 /* bono_top */
 main {
-  width: 85%;
+  width: 80%;
   margin: 0 auto;
 }
 .title_wrap {
@@ -83,7 +83,7 @@ main {
 }
 .main-title {
   font-size: 35px;
-  letter-spacing: 5px;
+  letter-spacing: 4px;
   padding: 50px;
 }
 .pm_btn {
@@ -150,27 +150,18 @@ main {
   padding-top: 120px;
 }
 .q_wrap {
-  display: flex;
-  justify-content: right;
-  align-items: center;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 }
 .q_text {
   padding-right: 50px;
-  text-align: right;
+  text-align: left;
   flex: 9;
 }
 .user_img {
   width: 100px;
   flex: 1;
 }
-.a_wrap {
-  display: flex;
-  justify-content: left;
-  align-items: center;
-}
 .a_text {
   flex: 9;
-  padding-left: 50px;
   line-height: 30px;
 }
