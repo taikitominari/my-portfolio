@@ -90,7 +90,7 @@ nav {
 .history_item {
   padding-bottom: 50px;
 }
-.h_title {
+.item_title {
   font-size: 22px;
   border-left: 10px solid #66cdaa;
   padding-left: 8px;
@@ -99,7 +99,7 @@ nav {
 .first {
   border-left: 10px solid #dc143c;
 }
-.h_text {
+.item_text {
   font-size: 18px;
   line-height: 30px;
 }

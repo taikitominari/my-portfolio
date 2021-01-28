@@ -1,7 +1,4 @@
-@media screen and (max-width: 900px) {
-  .main-title {
-    font-size: 25px;
-  }
+@media screen and (max-width: 1000px) {
   .fa-bars {
     display: block;
   }
