@@ -18,3 +18,7 @@ itemArray.forEach(function(item) {
     document.body.classList.remove('open_menu');
   });
 });
+
+window.addEventListener('resize', () => {
+  document.body.className = '';
+});
