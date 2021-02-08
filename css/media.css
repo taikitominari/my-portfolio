@@ -14,6 +14,12 @@
 }
 
 @media screen and (max-width: 900px) {
+  .fa-bars {
+    display: block;
+  }
+  .header_list {
+    display: none;
+  }
   .id_content_wrap {
     width: 80%;
     display: block;
@@ -24,6 +30,9 @@
   }
   .pg_item_wrap {
     display: block;
+  }
+  .id_text:first-child {
+    padding: 0px;
   }
   .skill_img_wrap {
     padding-right: 0;
@@ -38,11 +47,11 @@
 }
 
 @media screen and (max-width: 620px) {
-  .fa-bars {
-    display: block;
+  .title_name {
+    font-size: 28px;
   }
-  .header_list {
-    display: none;
+  .main-title {
+    font-size: 45px;
   }
   .pm_item_title {
     font-size: 25px;
@@ -51,10 +60,31 @@
     padding-bottom: 80px;
   }
   .pm_btn {
+    text-align: center;
     padding: 15px 0px;
     display: block;
     font-size: 18px;
     margin-right: 0px;
     margin-bottom: 20px;
+  }
+
+  .item_title{
+    font-size: 20px;
+  }
+  .item_text {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .title_name {
+    font-size: 23px;
+  }
+  .main-title {
+    font-size: 35px;
+  }
+  .pm_item_title {
+    font-size: 20px;
+    letter-spacing: 1px;
   }
 }

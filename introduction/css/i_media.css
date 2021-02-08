@@ -1,10 +1,10 @@
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1020px) {
   .main-title {
     font-size: 25px;
   }
   .fa-bars {
     display: block;
-  }
+  } 
   .header_list {
     display: none;
     letter-spacing: 3px;
@@ -44,3 +44,19 @@
     padding: 30px 50px;
   }
 } 
+
+@media screen and (max-width: 400px) {
+  .pm_btn {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .q_and_a_title {
+    font-size: 20px;
+  }
+  .a_logo {
+    font-size: 20px;
+  }
+  .q_logo {
+    font-size: 20px;
+  }
+}
