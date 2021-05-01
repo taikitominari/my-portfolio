@@ -5,10 +5,6 @@
   .fa-bars {
     display: block;
   } 
-  .header_list {
-    display: none;
-    letter-spacing: 3px;
-  }
   .question_list {
     padding: 30px 80px;
   }
@@ -39,6 +35,9 @@
   .main-title {
     font-size: 18px;
     letter-spacing: 2px;
+  }
+  .header_list li a {
+    font-size: 14px;
   }
   .question_list {
     padding: 30px 50px;
