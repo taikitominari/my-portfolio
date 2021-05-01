@@ -202,7 +202,7 @@ nav {
   font-size: 18px;
   padding-bottom: 30px;
 }
-.pm_btn {
+.pm_btn, .pg_btn {
   color: #fff;
   text-decoration: none;
   display: inline-block;
@@ -214,7 +214,7 @@ nav {
   border-radius: 8px;
   transition: 0.4s;
 }
-.pm_btn:hover {
+.pm_btn:hover , .pg_btn:hover {
   background-color: steelblue;
 }
 
