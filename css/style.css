@@ -5,8 +5,8 @@ body {
 .title_name {
   text-align: center;
   padding-bottom: 80px;
-  font-size: 32px;
-  letter-spacing: 3px;
+  font-size: 40px;
+  letter-spacing: 5px;
 } 
 
 /* header menu_list */
@@ -182,7 +182,6 @@ nav {
   text-align: center;
 }
 .pm_item_title {
-  color: #228b22;
   letter-spacing: 3px;
   padding: 40px;
   font-size: 35px;
@@ -190,9 +189,7 @@ nav {
 }
 .pm_item {
   width: 100%;
-}
-.pm_item:first-of-type {
-  padding-bottom: 150px;
+  padding: 40px 0;
 }
 .pm_img {
   width: 100%;
