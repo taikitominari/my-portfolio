@@ -2,9 +2,11 @@
   .fa-bars {
     display: block;
   }
-  .header_list {
-    display: none;
-    letter-spacing: 3px;
+}
+
+@media screen and (max-width: 620px) {
+  .header_list li a {
+    font-size: 14px;
   }
 }
 
