@@ -50,9 +50,6 @@
   .title_name {
     font-size: 28px;
   }
-  .main-title {
-    font-size: 45px;
-  }
   .pm_item_title {
     font-size: 25px;
   }
@@ -67,21 +64,11 @@
     margin-right: 0px;
     margin-bottom: 20px;
   }
-
-  .item_title{
-    font-size: 20px;
-  }
-  .item_text {
-    font-size: 15px;
-  }
 }
 
 @media screen and (max-width: 450px) {
   .title_name {
     font-size: 23px;
-  }
-  .main-title {
-    font-size: 35px;
   }
   .pm_item_title {
     font-size: 20px;

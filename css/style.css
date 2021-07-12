@@ -214,31 +214,3 @@ nav {
 .pm_btn:hover , .pg_btn:hover {
   background-color: steelblue;
 }
-
-
-
-.effort {
-  background-color: rgba(242, 242, 242,0.8);
-  padding: 100px 0 100px 0;
-}
-.ef_content_wrap {
-  width: 85%;
-  margin: 0 auto;
-}
-.main_title {
-  text-align: center;
-  font-size: 30px;
-  letter-spacing: 2px;
-  padding: 50px 0 100px 0;
-}
-.item_title {
-  font-size: 22px;
-  border-left: 10px solid #66cdaa;
-  padding-left: 8px;
-  margin-bottom: 20px;
-}
-.item_text {
-  font-size: 18px;
-  line-height: 25px;
-  padding-bottom: 30px;
-}
