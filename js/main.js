@@ -1,12 +1,12 @@
 'use strict';
 
 const openBtn = document.getElementById('open_btn');
-const haidBtn = document.getElementById('haid_btn');
+const shadow = document.getElementById('shadow');
 
 openBtn.addEventListener('click', () => {
   document.body.classList.add('open_menu');
 });
-haidBtn.addEventListener('click', () => {
+shadow.addEventListener('click', () => {
   document.body.classList.remove('open_menu');
 });
 
