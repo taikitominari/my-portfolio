@@ -98,21 +98,73 @@
 
 /* profile */
 #profile{
-  margin-top: 200px;
-  padding-top: 50px;
+  margin-top: 300px;
+  padding: 80px 0;
+  height: 350px;
   background-color:#E2EBED;
 }
 .profile_logo {
   margin-left: 10%;
+  font-size: 30px;
+  padding-bottom: 30px;
 }
 .profile_item_wrap {
-  width: 100%;
-  height: 300px; /*とりあえず指定 */
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 80px;
 }
-
+.profile_item {
+  width: 170px;
+  height: 170px;
+  position: relative;
+  z-index: 20;
+}
+.profile_item::before {
+  content: "";
+  width: 170px;
+  height: 170px;
+  transform: rotate(45deg);
+  border: 1px solid #000;
+  background-color: #fff;
+  position: absolute;
+}
+.profile_item::after {
+  content: "";
+  width: 170px;
+  height: 170px;
+  transform: rotate(45deg);
+  background-color: #a9a9a9;
+  position: absolute;
+  right: -12px;
+  z-index: -1;
+}
+.profile_text {
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  position: absolute;
+  top: calc(50% - 50px);
+}
+.text_title {
+  margin-bottom: 15px;
+}
+.profile_item p {
+  padding-bottom: 10px;
+}
+.fa-heart {
+  color:#dc143c;
+}
+.fa-image-portrait {
+  color: #00bfff;
+}
+.fa-pencil {
+  color: #228b22;
+}
 /* work */
 #work {
  height: 800px; /*とりあえず指定 */
  background-color: #F1E9E5;
- margin-top: 200px;
+ margin-top: 300px;
 }
