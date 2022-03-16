@@ -1,4 +1,4 @@
-.top {
+.top_content {
   background-image: url(../img/watercolour-4117017__480.webp);
   width: 100%;
   height: 780px;
@@ -17,9 +17,10 @@
   cursor: pointer;
 }
 .top_left:hover {
-  background-color: #4682b4;
+  /* background-color: #4682b4; */
+  background-color: #4169e1;
 }
-.top_left:hover .profile {
+.top_left:hover .top_left_text {
   transform: translateY(-10px);
   font-size: 20px;
 }
@@ -33,7 +34,7 @@
 .top_right:hover {
   background-color: #cd5c5c;
 }
-.top_right:hover .work {
+.top_right:hover .top_right_text {
   transform: translateY(-10px);
   font-size: 20px;
 }
@@ -72,7 +73,7 @@
   line-height: 25px;
   letter-spacing: 5px;
 }
-.profile {
+.top_left_text {
   width: 200px;
   height: 50px;
   letter-spacing: 3px;
@@ -83,7 +84,7 @@
   color: #000;
   transition: 1s;
 }
-.work {
+.top_right_text {
   width: 200px;
   height: 50px;
   letter-spacing: 3px;
@@ -93,4 +94,25 @@
   right: calc(50% - 100px);
   color: #000;
   transition: 1s;
+}
+
+/* profile */
+#profile{
+  margin-top: 200px;
+  padding-top: 50px;
+  background-color:#E2EBED;
+}
+.profile_logo {
+  margin-left: 10%;
+}
+.profile_item_wrap {
+  width: 100%;
+  height: 300px; /*とりあえず指定 */
+}
+
+/* work */
+#work {
+ height: 800px; /*とりあえず指定 */
+ background-color: #F1E9E5;
+ margin-top: 200px;
 }
