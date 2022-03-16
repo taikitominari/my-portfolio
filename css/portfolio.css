@@ -18,7 +18,7 @@
 }
 .top_left:hover {
   /* background-color: #4682b4; */
-  background-color: #4169e1;
+  background-color: #4682b4;
 }
 .top_left:hover .top_left_text {
   transform: translateY(-10px);
@@ -32,7 +32,7 @@
   transition: 1s;
 }
 .top_right:hover {
-  background-color: #cd5c5c;
+  background-color: #ff7f50;
 }
 .top_right:hover .top_right_text {
   transform: translateY(-10px);
@@ -72,6 +72,7 @@
   font-size: 16px;
   line-height: 25px;
   letter-spacing: 5px;
+  background-color: #fff;
 }
 .top_left_text {
   width: 200px;
@@ -120,6 +121,13 @@
   height: 170px;
   position: relative;
   z-index: 20;
+  opacity: 0;
+  transition: 2s;
+  transform: translateY(20px);
+}
+.profile_item.active {
+  opacity: 1;
+  transform: translateY(0px);
 }
 .profile_item::before {
   content: "";
@@ -139,6 +147,7 @@
   position: absolute;
   right: -12px;
   z-index: -1;
+  transition: 1.5s;
 }
 .profile_text {
   width: 100%;

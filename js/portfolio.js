@@ -11,3 +11,19 @@ $(function(){
     return false;
   });
 });
+
+
+$(function(){
+  $(window).on('scroll', function() {
+      if($(this).scrollTop() + $(window).height() > $('.profile_item').offset().top){
+        $('.profile_item').addClass('active');
+      }
+  });
+});
+$(function(){
+  $(window).on('scroll', function() {
+      if($(this).scrollTop() + $(window).height() > $('.profile_item').offset().top){
+        $('.profile_logo').addClass('show');
+      }
+  });
+});
