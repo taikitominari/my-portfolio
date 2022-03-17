@@ -12,6 +12,13 @@ $(function(){
   });
 });
 
+// top_left top_rightのフェードイン
+window.onload = function() {
+  $('.top_left').addClass('left_fadein');
+  $('.top_right').addClass('right_fadein');
+  $('.taiki').addClass('taiki_fadein');
+  $('.tominari').addClass('tominari_fadein');
+}
 // main_logoのフェードイン
 $(function(){
   $('.main_logo').children().addBack().contents().each(function() {
@@ -19,13 +26,13 @@ $(function(){
   });
    setTimeout(function(){
       $(".main_logo").addClass("active");
-  },100);
+  },2000);
 });
 
 
 // .logoのフェードイン
 let container = $(".logo");
-let speed = 200;
+let speed = 300;
 let content = container.html();
 let text = $.trim(content);
 let newHtml = "";

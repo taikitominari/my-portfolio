@@ -13,11 +13,14 @@
   flex: 5;
   position: relative;
   background-color: #E2EBED;
-  transition: 1s;
+  transition: 2.2s;
   cursor: pointer;
+  transform: translateX(-100%);
+}
+.top_left.left_fadein {
+  transform: translateX(0);
 }
 .top_left:hover {
-  /* background-color: #4682b4; */
   background-color: #4682b4;
 }
 .top_left:hover .top_left_text {
@@ -29,7 +32,11 @@
   position: relative;
   background-color: #F1E9E5;
   cursor: pointer;
-  transition: 1s;
+  transition: 2.2s;
+  transform: translateX(100%);
+}
+.top_right.right_fadein {
+  transform: translateX(0);
 }
 .top_right:hover {
   background-color: #ff7f50;
@@ -47,6 +54,7 @@
   top: calc(50% - 150px);
   left: calc(50% - 150px);
   background-color: #fff;
+  /* border: 2px #000 solid ; */
   z-index: 100;
   display: inline-block;
 }
@@ -57,10 +65,11 @@
   75% { color: #da70d6; }
 }
 .main_logo {
-  overflow: hidden;
+  width: 100%;
   text-align: center;
-  font-size: 45px;
+  font-size: 40px;
   letter-spacing: 3px;
+  font-weight: bold;
 }
 .text-move {
   display: inline-block;
@@ -109,15 +118,29 @@
 }
 .name {
   position: absolute;
-  top: 70px;
+  top: 50px;
   width: 100%;
   text-align: center;
 }
 .name p {
-  font-size: 16px;
-  line-height: 25px;
+  font-size: 22px;
+  line-height: 30px;
   letter-spacing: 5px;
   background-color: #fff;
+}
+.taiki {
+  transform: translateX(-100%);
+  transition: 0.8s;
+}
+.tominari {
+  transform: translateX(100%);
+  transition: 0.8s;
+}
+.taiki.taiki_fadein {
+  transform: translateX(0);
+}
+.tominari.tominari_fadein {
+  transform: translateX(0);
 }
 .top_left_text {
   width: 200px;
