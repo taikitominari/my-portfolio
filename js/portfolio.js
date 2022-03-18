@@ -29,32 +29,6 @@ $(function(){
   },2000);
 });
 
-
-// .logo フェードイン
-let container = $(".logo");
-let speed = 300;
-let content = container.html();
-let text = $.trim(content);
-let newHtml = "";
-
-text.split("").forEach(function(v) {
- newHtml += '<span>' + v + '</span>';
-});
-
-container.html(newHtml);
-
-$(function(){
-  $(window).on('scroll', function() {
-      if($(this).scrollTop() + $(window).height() > $('.profile_item').offset().top){
-        let txtNum = 0;
-        container.css({opacity: 1});
-        setInterval(function() {
-        container.find('span').eq(txtNum).css({opacity: 1});
-        txtNum++
-        }, speed);
-      }
-    });
-});
 // profile_item フェードイン
 $(function(){
   $(window).on('scroll', function() {
@@ -73,7 +47,7 @@ $(function(){
 $(function(){
   $(window).on('scroll', function() {
       if($(this).scrollTop() + $(window).height() > $('#profile_space').offset().top){
-        $('.fa-question').addClass('question_active');
+        $('.fa-comment-dots').addClass('comment_active');
         $('.fa-user-tie').addClass('user_active');
       }
     });

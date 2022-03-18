@@ -1,3 +1,4 @@
+
 .back_img {
   background-image: url(../img/back_img.png);
   opacity: 0.8;
@@ -6,7 +7,6 @@
   position: absolute;
   width: 100%;
   z-index: -100;
-
 }
 .top_content {
   width: 100%;
@@ -78,8 +78,9 @@
   width: 100%;
   text-align: center;
   font-size: 40px;
-  letter-spacing: 3px;
+  letter-spacing: 10px;
   font-weight: bold;
+  font-family: 'Sacramento', cursive;
 }
 .text-move {
   display: inline-block;
@@ -178,31 +179,33 @@
 
 /* profile_space */
 .space {
-  height: 300px;
+  height: 250px;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.fa-question,.fa-user-tie{
+.fa-comment-dots,.fa-user-tie{
   flex: 5;
   font-size: 180px;
   transition: 1.5s;
   opacity: 0;
 }
-.fa-question {
-  text-align: right;
+.fa-comment-dots {
+  text-align: left;
   font-size: 80px;
   color: #ff7f50;
-  transform: translateX(-100%) rotate(90deg);
+  transform: translateX(100%) rotate(-90deg);
 }
-.fa-question.question_active {
+.fa-comment-dots.comment_active {
   transform: translateX(0) rotate(0deg);
+  transform: translateY(-50px);
   opacity: 1;
 }
 .fa-user-tie {
+  text-align: right;
   color: #4682b4;
-  transform: translateX(100%) rotate(-90deg);
+  transform: translateX(-100%) rotate(90deg);
 }
 .fa-user-tie.user_active {
   transform: translateX(0) rotate(0deg);
@@ -213,25 +216,28 @@
 #profile{
   padding-bottom: 80px;
   width: 100%;
-  height: 400px;
   overflow: hidden;
   position: relative;
-  align-items: center;
 }
-.backgroud_wrap {
+.profile_backgroud {
+  background-image: url(../img/profile_background.webp);
+  opacity: 0.8;
+  height: 100vh;
+  background-size: cover;
   position: absolute;
   width: 100%;
-  height: 100vh;
+  z-index: -100;
   display: flex;
-  z-index: -1;
 }
 .profile_left{
   flex: 5;
   background-color: #E2EBED;
+  opacity: 0.9;
 }
 .profile_right{
   flex: 5;
   background-color: #F1E9E5;
+  opacity: 0.9;
 }
 .profile_logo {
   width: 100%;
@@ -240,21 +246,13 @@
   padding: 30px 0;
   display: flex;
 }
-.logo {
-  opacity: 0;
-  letter-spacing: 3px;
-}
-.logo span {
-  opacity: 0;
-  -webkit-transition: .6s ease-in-out;
-  transition: .6s ease-in-out;
-}
-
 .profile_item_wrap {
   width: 70%;
+  height: 260px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding-top: 80px;
 }
 .profile_item {
@@ -341,5 +339,30 @@
 /* work */
 #work {
  height: 800px; /*とりあえず指定 */
- background-color: #F1E9E5;
+ position: relative;
+ opacity: 0.9;
+ z-index: 1;
+}
+.work_background {
+  background-image: url(../img/work_background.webp);
+  height: 800px;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  z-index: -1000;
+  display: flex;
+}
+.work_left{
+  flex: 5;
+  background-color: #E2EBED;
+  opacity: 0.9;
+}
+.work_right{
+  flex: 5;
+  background-color: #F1E9E5;
+  opacity: 0.9;
+}
+.w_logo {
+  letter-spacing: 3px;
+  margin-left: 8px;
 }
