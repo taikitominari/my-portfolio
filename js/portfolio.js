@@ -30,7 +30,7 @@ $(function(){
 });
 
 
-// .logoのフェードイン
+// .logo フェードイン
 let container = $(".logo");
 let speed = 300;
 let content = container.html();
@@ -55,8 +55,7 @@ $(function(){
       }
     });
 });
-
-
+// profile_item フェードイン
 $(function(){
   $(window).on('scroll', function() {
       if($(this).scrollTop() + $(window).height() > $('.profile_item').offset().top){
@@ -70,8 +69,24 @@ $(function(){
     });
 });
 
-
-
+// profile_space フェードイン
+$(function(){
+  $(window).on('scroll', function() {
+      if($(this).scrollTop() + $(window).height() > $('#profile_space').offset().top){
+        $('.fa-question').addClass('question_active');
+        $('.fa-user-tie').addClass('user_active');
+      }
+    });
+});
+// work_space フェードイン
+$(function(){
+  $(window).on('scroll', function() {
+      if($(this).scrollTop() + $(window).height() > $('#work').offset().top){
+        $('.fa-laptop-code').addClass('code_active');
+        $('.fa-file').addClass('file_active');
+      }
+    });
+});
 
 
 

@@ -1,5 +1,14 @@
+.back_img {
+  background-image: url(../img/back_img.png);
+  opacity: 0.8;
+  height: 100vh;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  z-index: -100;
+
+}
 .top_content {
-  background-image: url(../img/watercolour-4117017__480.webp);
   width: 100%;
   height: 780px;
   background-size: cover;
@@ -16,6 +25,7 @@
   transition: 2.2s;
   cursor: pointer;
   transform: translateX(-100%);
+  opacity: 0.9;
 }
 .top_left.left_fadein {
   transform: translateX(0);
@@ -34,6 +44,7 @@
   cursor: pointer;
   transition: 2.2s;
   transform: translateX(100%);
+  opacity: 0.9;
 }
 .top_right.right_fadein {
   transform: translateX(0);
@@ -165,19 +176,68 @@
   transition: 1s;
 }
 
+/* profile_space */
+.space {
+  height: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fa-question,.fa-user-tie{
+  flex: 5;
+  font-size: 180px;
+  transition: 1.5s;
+  opacity: 0;
+}
+.fa-question {
+  text-align: right;
+  font-size: 80px;
+  color: #ff7f50;
+  transform: translateX(-100%) rotate(90deg);
+}
+.fa-question.question_active {
+  transform: translateX(0) rotate(0deg);
+  opacity: 1;
+}
+.fa-user-tie {
+  color: #4682b4;
+  transform: translateX(100%) rotate(-90deg);
+}
+.fa-user-tie.user_active {
+  transform: translateX(0) rotate(0deg);
+  opacity: 1;
+}
+
 /* profile */
 #profile{
-  margin-top: 300px;
-  padding: 80px 0;
-  height: 350px;
-  background-color:#E2EBED;
+  padding-bottom: 80px;
+  width: 100%;
+  height: 400px;
   overflow: hidden;
+  position: relative;
+  align-items: center;
+}
+.backgroud_wrap {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  z-index: -1;
+}
+.profile_left{
+  flex: 5;
+  background-color: #E2EBED;
+}
+.profile_right{
+  flex: 5;
+  background-color: #F1E9E5;
 }
 .profile_logo {
   width: 100%;
   margin-left: 10%;
   font-size: 30px;
-  padding-bottom: 30px;
+  padding: 30px 0;
   display: flex;
 }
 .logo {
@@ -252,9 +312,34 @@
 .fa-pencil {
   color: #228b22;
 }
+
+/* work_space */
+.fa-laptop-code {
+  font-size: 120px;
+  opacity: 0;
+  transform: translateY(150px) rotate(180deg);
+  transition: 1s;
+  color: #ff7f50;
+  padding-left: 30px;
+}
+.fa-laptop-code.code_active {
+  transform: translateY(0) rotate(0deg);
+  opacity: 1;
+}
+.fa-file {
+  font-size: 120px;
+  opacity: 0;
+  transform: translateY(-150px) rotate(180deg);
+  transition: 1s;
+  color: #4682b4;
+  padding-right: 30px;
+}
+.fa-file.file_active {
+  transform: translateY(0) rotate(0deg);
+  opacity: 1;
+}
 /* work */
 #work {
  height: 800px; /*とりあえず指定 */
  background-color: #F1E9E5;
- margin-top: 300px;
 }
