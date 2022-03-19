@@ -1,22 +1,23 @@
-
 .back_img {
   background-image: url(../img/back_img.png);
   opacity: 0.8;
-  height: 100vh;
   background-size: cover;
+  height: 780px;
   position: absolute;
   width: 100%;
-  z-index: -100;
+  z-index: -10;
 }
 .top_content {
   width: 100%;
   height: 780px;
   background-size: cover;
+  overflow: hidden;
 }
 .top_wrap {
   width: 100%;
   display: flex;
   height: 780px;
+  overflow: hidden;
 }
 .top_left {
   flex: 5;
@@ -35,7 +36,7 @@
 }
 .top_left:hover .top_left_text {
   transform: translateY(-10px);
-  font-size: 20px;
+  font-size: 25px;
 }
 .top_right {
   flex: 5;
@@ -54,7 +55,7 @@
 }
 .top_right:hover .top_right_text {
   transform: translateY(-10px);
-  font-size: 20px;
+  font-size: 25px;
 }
 .top_title {
   width: 300px;
@@ -164,6 +165,7 @@
   right: calc(50% - 100px);
   color: #000;
   transition: 1s;
+  font-size: 18px;
 }
 .top_right_text {
   width: 200px;
@@ -175,18 +177,26 @@
   right: calc(50% - 100px);
   color: #000;
   transition: 1s;
+  font-size: 18px;
 }
 
 /* profile_space */
 .space {
+  overflow: hidden;
   height: 250px;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.fa-comment-dots,.fa-user-tie{
-  flex: 5;
+.fa-comment-dots {
+  flex: 4.3;
+  font-size: 180px;
+  transition: 1.5s;
+  opacity: 0;
+}
+.fa-user-tie {
+  flex: 5.7;
   font-size: 180px;
   transition: 1.5s;
   opacity: 0;
@@ -195,7 +205,7 @@
   text-align: left;
   font-size: 80px;
   color: #ff7f50;
-  transform: translateX(100%) rotate(-90deg);
+  transform: translateX(100%) rotate(40deg);
 }
 .fa-comment-dots.comment_active {
   transform: translateX(0) rotate(0deg);
@@ -205,7 +215,7 @@
 .fa-user-tie {
   text-align: right;
   color: #4682b4;
-  transform: translateX(-100%) rotate(90deg);
+  transform: translateX(-100%) rotate(40deg);
 }
 .fa-user-tie.user_active {
   transform: translateX(0) rotate(0deg);
@@ -239,8 +249,7 @@
   background-color: #F1E9E5;
   opacity: 0.9;
 }
-.profile_logo {
-  width: 100%;
+.section_logo {
   margin-left: 10%;
   font-size: 30px;
   padding: 30px 0;
@@ -262,7 +271,7 @@
   z-index: 20;
   opacity: 0;
   transition: 1.2s;
-  transform: translate(800px, 0px) rotate(180deg);
+  transform: translate(500px, 0px) rotate(180deg);
 }
 .profile_item.item_active {
   opacity: 1;
@@ -336,16 +345,16 @@
   transform: translateY(0) rotate(0deg);
   opacity: 1;
 }
+
 /* work */
 #work {
- height: 800px; /*とりあえず指定 */
  position: relative;
  opacity: 0.9;
  z-index: 1;
 }
 .work_background {
   background-image: url(../img/work_background.webp);
-  height: 800px;
+  height: 1000px;
   background-size: cover;
   position: absolute;
   width: 100%;
@@ -365,4 +374,100 @@
 .w_logo {
   letter-spacing: 3px;
   margin-left: 8px;
+}
+.work_content {
+  width: 85%;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+.bono_img {
+  position: relative;
+}
+.bono_img:hover .bono_cover {
+  opacity: 1;
+}
+.bono_cover {
+  overflow: hidden;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  z-index: 1000;
+  opacity: 0;
+  transition: 0.5s;
+}
+.bono_img:hover .cover_item {
+  transform: translate(0px) rotate(0deg);
+}
+.cover_item {
+  transition: 1s;
+  transform: translate(200px ,150px) rotate(30deg);
+  text-align: center;
+  padding-top: 15%;
+}
+.bono_cover p {
+  color: #fff;
+}
+.cover_title {
+  font-size: 50px;
+  letter-spacing: 3px;
+  color: #32cd32 !important;
+}
+.cover_code {
+  font-size: 20px;
+  padding: 20px 0 50px 0;
+}
+.cover_text {
+  font-size: 20px;
+  padding-bottom: 80px;
+}
+.fa-code {
+  padding-right: 10px;
+  color: #7fffd4;
+}
+.bono {
+  width: 100%;
+  border-radius: 10px;
+  position: relative;
+}
+.study_title {
+  font-size: 25px;
+  padding: 30px 0;
+}
+.study_item {
+  display: flex;
+  justify-content: space-between;
+}
+.study_item img {
+  width: 270px;
+  height: 170px;
+  border-radius: 10px;
+}
+.btn_wrap {
+  display: flex;
+  width: 40%;
+  margin: 0 auto;
+}
+.git_btn , .cover_btn {
+  border-radius: 10px;
+  padding: 20px 0px;
+  transition: 0.8s;
+  color: #000;
+  flex: 5;
+}
+.git_btn:hover {
+  background-color: #ff7f50;
+}
+.cover_btn:hover {
+  background-color: #4682b4;
+}
+.git_btn {
+  background-color:#F1E9E5;
+  margin-left: 10px;
+}
+.cover_btn {
+  background-color: #E2EBED;
+  margin-right: 10px;
 }
