@@ -64,6 +64,10 @@
   }
 }
 @media screen and (max-width:800px) {
+  .main_logo {
+    font-size: 32px;
+    letter-spacing: 5px;
+  }
   .profile_item_wrap {
     width: 100%;
   }
@@ -106,9 +110,18 @@
     right: calc(50% - 65px);
     font-size: 16px;
   }
+  .fa-user-tie {
+    font-size: 90px;
+  }
+  .fa-comment-dots {
+    font-size: 50px;
+  }
   .profile_item {
     width: 150px;
     height: 150px;
+  }
+  .p_logo {
+    font-size: 22px;
   }
   .top_left:hover .top_left_text {
     transform: translateY(-30px);
@@ -125,11 +138,38 @@
   .profile_item p {
     font-size: 16px;
   }
+  .fa-laptop-code {
+    font-size: 60px;
+  }
+  .fa-file {
+    font-size: 60px;
+  }
+  .w_logo {
+    font-size: 22px;
+  }
   .create_title {
     font-size: 22px;
   }
+  .cover_item {
+    padding-top: 2%;
+  }
+  .cover_code {
+    font-size: 16px;
+  }
   .create_text {
     font-size: 18px;
+  }
+  .btn_wrap {
+    flex-direction: column;
+  }
+  .btn_wrap {
+    width: 90%;
+  }
+  .git_btn , .cover_btn {
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 2px 0;
+    margin: 5px 0 0 0;
   }
   .address , .quiz , .todo {
     width: 100%;
