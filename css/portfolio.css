@@ -257,10 +257,11 @@
 }
 .profile_item_wrap {
   width: 70%;
-  height: 260px;
+  height: 100%;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
   padding-top: 80px;
 }
@@ -272,6 +273,7 @@
   opacity: 0;
   transition: 1.2s;
   transform: translate(500px, 0px) rotate(180deg);
+  margin: 10px 50px;
 }
 .profile_item.item_active {
   opacity: 1;
@@ -379,6 +381,16 @@
   width: 85%;
   margin: 0 auto;
 }
+.create_title {
+  font-size: 50px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  color: #32cd32 !important;
+}
+.create_text {
+  font-size: 20px;
+  padding: 20px 0 50px 0;
+}
 .bono_img {
   position: relative;
 }
@@ -404,7 +416,7 @@
   transition: 1s;
   transform: translate(200px ,150px) rotate(30deg);
   text-align: center;
-  padding-top: 15%;
+  padding-top: 13%;
 }
 .bono_cover p {
   color: #fff;
@@ -412,18 +424,9 @@
 .create_wrap {
   padding: 50px 0;
 }
-.cover_title {
-  font-size: 50px;
-  letter-spacing: 3px;
-  color: #32cd32 !important;
-}
 .cover_code {
   font-size: 20px;
   padding: 20px 0 50px 0;
-}
-.cover_text {
-  font-size: 20px;
-  padding-bottom: 80px;
 }
 .fa-code {
   padding-right: 10px;
@@ -463,20 +466,19 @@
 .address , .quiz , .todo {
   transition: 0.8s;
   cursor: pointer;
-}
-.study_title {
-  font-size: 25px;
-  padding: 50px 0 50px 0;
-}
-.study_item {
-  display: flex;
-  justify-content: space-between;
-}
-.study_item img {
   width: 300px;
   height: 200px;
   border-radius: 10px;
-  background-color: #000;
+  padding: 30px;
+}
+.study_title {
+  font-size: 25px;
+  padding: 50px 0 20px 0;
+}
+.study_item {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .address:hover , .quiz:hover , .todo:hover {
   opacity: 0.8;

@@ -1,0 +1,93 @@
+@media screen and (max-width:1000px) {
+  .create_title {
+    font-size: 35px;
+  }
+  .create_text {
+    padding-bottom: 50px;
+  }
+}
+@media screen and (max-width:900px) {
+  .cover_title {
+    font-size: 35px;
+  }
+  .cover_text {
+    padding-bottom: 50px;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width:800px) {
+  .fa-user-tie {
+    font-size: 130px;
+  }
+  .fa-comment-dots {
+    font-size: 70px;
+  }
+  .fa-laptop-code {
+    font-size: 90px;
+  }
+  .fa-file {
+    font-size: 90px;
+  }
+  .create_title {
+    font-size: 30px;
+  }
+  .create_text {
+    padding-bottom: 30px;
+    font-size: 18px;
+  }
+  .cover_code {
+    padding: 20px;
+  }
+  .profile_item_wrap {
+    flex-direction: column;
+  }
+  .profile_item {
+    width: 300px;
+  }
+  .profile_item::before {
+    transform: rotate(0deg);
+    border-radius: 10px;
+    width: 300px;
+  }
+  .profile_item::after {
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+  .text_title {
+    font-size: 22px;
+  }
+  .profile_item p {
+    font-size: 18px;
+  }
+  .btn_wrap {
+    width: 70%;
+  }
+}
+@media screen and (max-width:800px) {
+  .profile_item {
+    width: 200px;
+  }
+  .profile_item::before {
+    width: 200px;
+  }
+  .text_title {
+    font-size: 20px;
+  }
+  .profile_item p {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width:500px) {
+  .profile_item {
+    width: 170px;
+  }
+  .profile_item::before {
+    width: 170px;
+  }
+  .create_title {
+    font-size: 22px;
+  }
+  .create_text {
+    font-size: 18px;
+  }
+}
