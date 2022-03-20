@@ -205,7 +205,7 @@
   text-align: left;
   font-size: 80px;
   color: #ff7f50;
-  transform: translateX(100%) rotate(40deg);
+  transform: translateY(50px) rotate(100deg);
 }
 .fa-comment-dots.comment_active {
   transform: translateX(0) rotate(0deg);
@@ -215,7 +215,7 @@
 .fa-user-tie {
   text-align: right;
   color: #4682b4;
-  transform: translateX(-100%) rotate(40deg);
+  transform: translateY(-50px) rotate(100deg);
 }
 .fa-user-tie.user_active {
   transform: translateX(0) rotate(0deg);
@@ -354,7 +354,7 @@
 }
 .work_background {
   background-image: url(../img/work_background.webp);
-  height: 1000px;
+  height: 100%;
   background-size: cover;
   position: absolute;
   width: 100%;
@@ -378,7 +378,6 @@
 .work_content {
   width: 85%;
   margin: 0 auto;
-  padding: 50px 0;
 }
 .bono_img {
   position: relative;
@@ -410,6 +409,9 @@
 .bono_cover p {
   color: #fff;
 }
+.create_wrap {
+  padding: 50px 0;
+}
 .cover_title {
   font-size: 50px;
   letter-spacing: 3px;
@@ -431,19 +433,6 @@
   width: 100%;
   border-radius: 10px;
   position: relative;
-}
-.study_title {
-  font-size: 25px;
-  padding: 30px 0;
-}
-.study_item {
-  display: flex;
-  justify-content: space-between;
-}
-.study_item img {
-  width: 270px;
-  height: 170px;
-  border-radius: 10px;
 }
 .btn_wrap {
   display: flex;
@@ -470,4 +459,26 @@
 .cover_btn {
   background-color: #E2EBED;
   margin-right: 10px;
+}
+.address , .quiz , .todo {
+  transition: 0.8s;
+  cursor: pointer;
+}
+.study_title {
+  font-size: 25px;
+  padding: 50px 0 50px 0;
+}
+.study_item {
+  display: flex;
+  justify-content: space-between;
+}
+.study_item img {
+  width: 300px;
+  height: 200px;
+  border-radius: 10px;
+  background-color: #000;
+}
+.address:hover , .quiz:hover , .todo:hover {
+  opacity: 0.8;
+  transform: translateY(-20px);
 }
